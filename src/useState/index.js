@@ -1,4 +1,6 @@
-const useStateDemo = () => {
+import { useState } from "react";
+
+const UseStateDemo = () => {
     const [count, setCount] = useState(1);
 
     function handleIncrease() {
@@ -15,4 +17,4 @@ const useStateDemo = () => {
     )
 }
 
-export default useStateDemo;
+export default UseStateDemo;
