@@ -8,6 +8,9 @@ import UseRefDemo from "./useRef";
 import UseStateDemo from "./useState";
 import './app.css';
 import Context from "./context";
+import { useState } from "react";
+import Form from "./form/Form";
+import MovieSearch from "./movie-search/MovieSearch";
 
 function App() {
   return (
@@ -21,6 +24,8 @@ function App() {
       {/* <UseReducerDemo /> */}
       {/* <ReactContext /> */}
       <Context />
+      {/* <Form /> */}
+    <MovieSearch />
     </div>
   );
 }
