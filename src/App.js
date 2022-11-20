@@ -11,6 +11,7 @@ import Context from "./context";
 import { useState } from "react";
 import Form from "./form/Form";
 import MovieSearch from "./movie-search/MovieSearch";
+import SignUpForm from "./form/SignUpForm";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
       {/* <ReactContext /> */}
       {/* <Context /> */}
       {/* <Form /> */}
-      <MovieSearch />
+      {/* <MovieSearch /> */}
+      <SignUpForm />
     </div>
   );
 }
