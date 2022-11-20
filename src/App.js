@@ -6,7 +6,7 @@ import UseEffectDemo from "./useEffect";
 import UseReducerDemo from "./useReducer";
 import UseRefDemo from "./useRef";
 import UseStateDemo from "./useState";
-import './app.css';
+import "./app.css";
 import Context from "./context";
 import { useState } from "react";
 import Form from "./form/Form";
@@ -23,9 +23,9 @@ function App() {
       {/* <UseCallBackDemo /> */}
       {/* <UseReducerDemo /> */}
       {/* <ReactContext /> */}
-      <Context />
+      {/* <Context /> */}
       {/* <Form /> */}
-    <MovieSearch />
+      <MovieSearch />
     </div>
   );
 }
