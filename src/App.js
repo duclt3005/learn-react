@@ -13,6 +13,7 @@ import Form from "./form/Form";
 import MovieSearch from "./movie-search/MovieSearch";
 import SignUpForm from "./form/SignUpForm";
 import SignUpFormHook from "./form/SignUpFormHook";
+import ModalDemo from "./modal/ModalDemo";
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
       {/* <Form /> */}
       {/* <MovieSearch /> */}
       {/* <SignUpForm /> */}
-      <SignUpFormHook />
+      {/* <SignUpFormHook /> */}
+      <ModalDemo />
     </div>
   );
 }
