@@ -19,7 +19,7 @@ const MovieSearch = () => {
 
       if (response.data.results) {
         setMovies(response.data.results);
-				setLoading(false);
+        setLoading(false);
       }
     }
     fetchingData();

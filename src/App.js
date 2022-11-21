@@ -12,6 +12,7 @@ import { useState } from "react";
 import Form from "./form/Form";
 import MovieSearch from "./movie-search/MovieSearch";
 import SignUpForm from "./form/SignUpForm";
+import SignUpFormHook from "./form/SignUpFormHook";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
       {/* <Context /> */}
       {/* <Form /> */}
       {/* <MovieSearch /> */}
-      <SignUpForm />
+      {/* <SignUpForm /> */}
+      <SignUpFormHook />
     </div>
   );
 }
