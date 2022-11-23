@@ -5,9 +5,9 @@ const Modal = ({ open = false, handleClose = () => {} }) => {
     <div className={`fixed inset-0 z-50 flex items-center justify-center p-5 modal ${
       open ? "" : "opacity-0 invisible"
     }`}>
-      <div className="absolute inset-0 bg-black bg-opacity-25 p-5  overlay"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-25 p-5  overlay" onClick={handleClose}></div>
       <div className="relative model-content bg-white z-10 p-10 rounded-lg w-full max-w-[482px]">
-        <span  className="absolute top-0 right-0 flex items-center justify-center w-10 h-10 p-1 bg-white rounded-full cursor-pointer -translate-y-2/4 translate-x-2/4">
+        <span  className="absolute top-0 right-0 flex items-center justify-center w-10 h-10 p-1 bg-white rounded-full cursor-pointer -translate-y-2/4 translate-x-2/4" onClick={handleClose}>
           <svg
             width="14"
             height="14"
