@@ -14,6 +14,8 @@ import MovieSearch from "./movie-search/MovieSearch";
 import SignUpForm from "./form/SignUpForm";
 import SignUpFormHook from "./form/SignUpFormHook";
 import ModalDemo from "./modal/ModalDemo";
+import Header from "./components/Header";
+import { AuthProvider } from "./context/authContext";
 
 function App() {
   return (
@@ -31,7 +33,10 @@ function App() {
       {/* <MovieSearch /> */}
       {/* <SignUpForm /> */}
       {/* <SignUpFormHook /> */}
-      <ModalDemo />
+      {/* <ModalDemo /> */}
+      <AuthProvider>
+        <Header />
+      </AuthProvider>
     </div>
   );
 }
