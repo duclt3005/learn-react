@@ -16,6 +16,9 @@ import SignUpFormHook from "./form/SignUpFormHook";
 import ModalDemo from "./modal/ModalDemo";
 import Header from "./components/Header";
 import { AuthProvider } from "./context/authContext";
+import { GalleryProvider } from "./context/galleryContext";
+import PhotoList from "./gallery/PhotoList";
+import CartList from "./gallery/CartList";
 
 function App() {
   return (
@@ -35,7 +38,11 @@ function App() {
       {/* <SignUpFormHook /> */}
       {/* <ModalDemo /> */}
       <AuthProvider>
-        <Header />
+        <GalleryProvider>
+          <Header />
+          <PhotoList />
+          <CartList />
+        </GalleryProvider>
       </AuthProvider>
     </div>
   );
