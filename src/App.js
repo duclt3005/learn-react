@@ -19,6 +19,7 @@ import { AuthProvider } from "./context/authContext";
 import { GalleryProvider } from "./context/galleryContext";
 import PhotoList from "./gallery/PhotoList";
 import CartList from "./gallery/CartList";
+import TodoRedux from "./redux/todo/TodoRedux";
 
 function App() {
   return (
@@ -37,13 +38,14 @@ function App() {
       {/* <SignUpForm /> */}
       {/* <SignUpFormHook /> */}
       {/* <ModalDemo /> */}
-      <AuthProvider>
+      {/* <AuthProvider>
         <GalleryProvider>
           <Header />
           <PhotoList />
           <CartList />
         </GalleryProvider>
-      </AuthProvider>
+      </AuthProvider> */}
+      <TodoRedux />
     </div>
   );
 }
