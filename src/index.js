@@ -4,7 +4,8 @@ import { Provider } from "react-redux";
 import App from "./App";
 import { StoreProvider } from "./context/store";
 import "./index.css";
-import store from "./redux/todo/redux/store";
+// import store from "./redux/todo/redux/store";
+import store from "./redux/todo/redux-toolkit/store";
 
 ReactDOM.render(
   <React.StrictMode>

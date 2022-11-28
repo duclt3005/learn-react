@@ -7,10 +7,10 @@ const Header = () => {
   const { photos, cartItems } = useGallery();
 
   const favoriteCount =
-  photos.length > 0
-    ? photos.filter((item) => item.isFavorite === true).length
-    : 0;
-const cartItemsCount = cartItems.length;
+    photos.length > 0
+      ? photos.filter((item) => item.isFavorite === true).length
+      : 0;
+  const cartItemsCount = cartItems.length;
 
   return (
     <div className="p-4 bg-white shadow-md flex items-center justify-center">
@@ -28,7 +28,7 @@ const cartItemsCount = cartItems.length;
       ) : (
         <span className="text-sm font-medium">Welcome</span>
       )}
-        <div className="ml-auto mr-5 flex items-center gap-5">
+      <div className="ml-auto mr-5 flex items-center gap-5">
         <span className="relative w-8">
           <svg
             width="44"
@@ -100,7 +100,12 @@ const cartItemsCount = cartItems.length;
           </span>
         </span>
       </div>
-      <button className="p-2 rounded-md bg-gray-300 ml-auto" onClick={()=> setUser(null)}>Sign out</button>
+      <button
+        className="p-2 rounded-md bg-gray-300 ml-auto"
+        onClick={() => setUser(null)}
+      >
+        Sign out
+      </button>
     </div>
   );
 };
