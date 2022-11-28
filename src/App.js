@@ -20,6 +20,7 @@ import { GalleryProvider } from "./context/galleryContext";
 import PhotoList from "./gallery/PhotoList";
 import CartList from "./gallery/CartList";
 import TodoRedux from "./redux/todo/TodoRedux";
+import SimpleMovie from "./project/simple-movie/SimpleMovie";
 
 function App() {
   return (
@@ -45,7 +46,8 @@ function App() {
           <CartList />
         </GalleryProvider>
       </AuthProvider> */}
-      <TodoRedux />
+      {/* <TodoRedux /> */}
+      <SimpleMovie />
     </div>
   );
 }

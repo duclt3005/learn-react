@@ -1,2 +1,6 @@
-- Github
+- Github lesson
 https://github.com/evondev/react-course/tree/master/src
+- Github simple movie
+https://github.com/evondev/simple-movie/tree/master/src
+-Github monkey blogging
+https://github.com/evondev/monkey-blogging/tree/master/src
