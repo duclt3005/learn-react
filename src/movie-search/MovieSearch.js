@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import useDebounce from "../hooks/useDebounce";
 import LoadingSkeleton from "../loading/LoadingSkeleton";
+import { API_KEY } from "../project/simple-movie/config";
 // https://api.themoviedb.org/3/search/movie?api_key=a75830ccf5de99b13d1ec3a570a51a4e&query=Jack+Reacher
 
 const MovieSearch = () => {
@@ -14,7 +15,7 @@ const MovieSearch = () => {
   useEffect(() => {
     async function fetchingData() {
       let response = await axios.get(
-        `https://api.themoviedb.org/3/search/movie?api_key=a75830ccf5de99b13d1ec3a570a51a4e&query='${queryDebounce}'`
+        `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query='${queryDebounce}'`
       );
 
       if (response.data.results) {
